@@ -553,5 +553,160 @@
     "titulo": "En el contexto de la UA, ¿cuál es el protocolo para configurar el acceso a la red inalámbrica de forma segura?",
     "respuestas": ["WEP", "WPA2/WPA3-Enterprise (802.1X)", "Abierta con captivo", "WPS"],
     "correcta": 1
+  },
+  {
+    "titulo": "¿Qué lenguaje de consulta se utiliza de forma estándar para gestionar y recuperar datos en bases de datos relacionales?",
+    "respuestas": ["HTML", "Python", "SQL", "Java"],
+    "correcta": 2
+  },
+  {
+    "titulo": "En una base de datos, ¿qué es una 'Primary Key' (Llave Primaria)?",
+    "respuestas": [
+      "Una contraseña para entrar a la base de datos",
+      "Un campo que identifica de forma única cada registro en una tabla",
+      "La primera columna de cualquier tabla",
+      "Una copia de seguridad de la tabla"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significa el acrónimo CMS en el contexto de gestión web (como Drupal o WordPress)?",
+    "respuestas": [
+      "Computer Management System",
+      "Content Management System",
+      "Control Multitarea de Seguridad",
+      "Central Monitoring Server"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Deadlock' en el contexto de sistemas operativos o bases de datos?",
+    "respuestas": [
+      "Un virus que bloquea el teclado",
+      "Una situación donde dos procesos se esperan mutuamente y ninguno avanza",
+      "Cuando se borra un archivo por error",
+      "El cierre repentino de una aplicación"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función de una 'Foreign Key' (Llave Foránea) en una base de datos?",
+    "respuestas": [
+      "Aumentar la velocidad de búsqueda",
+      "Establecer una relación entre dos tablas distintas",
+      "Cifrar los datos de la tabla",
+      "Permitir el acceso a usuarios externos"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué herramienta de control de versiones es el estándar actual para el desarrollo de software?",
+    "respuestas": ["Subversion", "Git", "CVS", "Mercurial"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es una 'Query' (Consulta)?",
+    "respuestas": [
+      "Una solicitud de información a una base de datos",
+      "Un error en el código",
+      "Un tipo de virus",
+      "Una carpeta del sistema"
+    ],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué protocolo se utiliza para la transferencia de archivos de forma segura entre un cliente y un servidor?",
+    "respuestas": ["HTTP", "SFTP / SCP", "Telnet", "ICMP"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En el desarrollo web, ¿qué lenguaje se encarga de la estructura y el contenido de la página?",
+    "respuestas": ["CSS", "JavaScript", "HTML", "PHP"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué herramienta de la UA permite la gestión de incidencias técnicas (Ticketing)?",
+    "respuestas": ["Microsoft Word", "GLPI / Jira", "Outlook", "Excel"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Backend' en una aplicación web?",
+    "respuestas": [
+      "La parte visual con la que interactúa el usuario",
+      "La parte lógica que se ejecuta en el servidor y gestiona la base de datos",
+      "El cableado de red",
+      "La pantalla del monitor"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué formato de intercambio de datos ligero es muy usado en APIs web por ser fácil de leer para humanos?",
+    "respuestas": ["XML", "JSON", "CSV", "TXT"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es la 'Normalización' en bases de datos?",
+    "respuestas": [
+      "Borrar los datos que no sirven",
+      "Organizar los datos para reducir la redundancia y mejorar la integridad",
+      "Cambiar el idioma de las tablas",
+      "Hacer copias de seguridad diarias"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función del archivo '.htaccess' en un servidor web Apache?",
+    "respuestas": [
+      "Guardar las contraseñas de los usuarios",
+      "Configurar directivas de acceso y redirecciones a nivel de directorio",
+      "Aumentar la velocidad del procesador",
+      "Instalar el sistema operativo"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significa que una base de datos sea NoSQL?",
+    "respuestas": [
+      "Que no usa lenguaje de programación",
+      "Que no utiliza el modelo relacional tradicional de tablas",
+      "Que es una base de datos gratuita",
+      "Que solo funciona en Linux"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es una 'API' (Application Programming Interface)?",
+    "respuestas": [
+      "Un tipo de pantalla de alta resolución",
+      "Un conjunto de reglas que permite que dos aplicaciones se comuniquen entre sí",
+      "Una tarjeta de red",
+      "Un lenguaje de diseño gráfico"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando SQL se usa para eliminar todos los registros de una tabla sin borrar la estructura?",
+    "respuestas": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué es el 'Cloud Computing' (Computación en la Nube)?",
+    "respuestas": [
+      "Guardar archivos en un pendrive",
+      "Acceso bajo demanda a recursos informáticos a través de Internet",
+      "Un sistema para predecir el tiempo",
+      "Conectar dos ordenadores por cable"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué herramienta se usa para virtualizar aplicaciones en 'contenedores' aislados?",
+    "respuestas": ["VirtualBox", "Docker", "VMware", "Chrome"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En la UA, ¿qué sistema se utiliza para la firma electrónica de documentos oficiales?",
+    "respuestas": ["WhatsApp", "Portafirmas", "Paint", "Spotify"],
+    "correcta": 1
   }
 ]
