@@ -1,0 +1,557 @@
+[
+  {
+  "titulo": "¿Qué componente de la CPU se encarga de coordinar el flujo de datos y las instrucciones entre los distintos componentes del procesador?",
+  "respuestas": ["Unidad Aritmético Lógica", "Memoria Caché", "Unidad de Control (UC)", "Registro de Instrucción"],
+  "correcta": 2
+	},
+  {
+    "titulo": "¿Qué componente de la CPU se encarga de coordinar el flujo de datos y las instrucciones entre los distintos componentes del procesador?",
+    "respuestas": ["Unidad Aritmético Lógica (ALU)", "Registro de Instrucción", "Unidad de Control (UC)", "Bus de Datos"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cómo se denomina a la memoria de alta velocidad integrada en el procesador que sirve para reducir el tiempo de acceso a los datos de la RAM?",
+    "respuestas": ["Memoria Virtual", "Memoria Caché", "Memoria de Intercambio (Swap)", "Memoria ROM"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En una arquitectura de 64 bits, ¿cuál es la principal ventaja sobre una de 32 bits respecto a la memoria RAM?",
+    "respuestas": ["Mayor velocidad de procesamiento por ciclo", "Compatibilidad con buses ISA", "Capacidad de direccionar más de 4 GB de RAM", "Reducción del calor generado por el procesador"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cuál es la principal diferencia entre la memoria RAM y un disco duro (HDD/SSD) en cuanto a la persistencia de datos?",
+    "respuestas": ["La RAM es persistente y el disco es volátil", "La RAM es volátil y el disco es persistente", "Ambos son volátiles pero la RAM es más rápida", "Ambos son persistentes pero el disco tiene más capacidad"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función del bus de direcciones en una placa base?",
+    "respuestas": ["Transportar los datos reales entre componentes", "Suministrar energía a la CPU", "Indicar la posición de memoria para leer o escribir", "Sincronizar el reloj del sistema"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué significa que un procesador tenga 'Overclocking'?",
+    "respuestas": ["Que tiene más núcleos de los indicados", "Que funciona a una velocidad superior a la de fábrica", "Que utiliza menos energía de la habitual", "Que puede emular otros sistemas operativos"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué componente mantiene la hora del sistema y la configuración de la BIOS cuando el equipo está desconectado?",
+    "respuestas": ["El condensador principal", "La memoria Caché L3", "La pila del CMOS (CR2032)", "El transformador de la fuente"],
+    "correcta": 2
+  },
+  {
+    "titulo": "En la jerarquía de almacenamiento, ¿cuál es el componente más rápido pero con menor capacidad?",
+    "respuestas": ["Los registros de la CPU", "La Memoria Caché L1", "La Memoria RAM", "El disco SSD NVMe"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué función cumple la Fuente de Alimentación en un PC?",
+    "respuestas": ["Almacenar energía para casos de apagón", "Transformar corriente alterna (AC) en continua (DC)", "Enfriar los componentes internos", "Gestionar el arranque del sistema operativo"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función del chipset 'Southbridge' en una placa base tradicional?",
+    "respuestas": ["Gestionar la comunicación rápida con la RAM", "Controlar los periféricos de entrada/salida (USB, SATA, audio)", "Realizar cálculos matemáticos complejos", "Conectar el procesador con la tarjeta gráfica"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En Windows 10, ¿cuál es el comando de consola para forzar la actualización de las Directivas de Grupo (GPO)?",
+    "respuestas": ["gpedit /all", "msconfig /update", "gpupdate /force", "taskmgr /reload"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cuál es la función del Gestor de Arranque (Bootloader)?",
+    "respuestas": ["Verificar la conexión a Internet", "Cargar el núcleo del sistema operativo en la RAM al encender", "Desfragmentar el disco duro automáticamente", "Gestionar las actualizaciones de drivers"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es el sistema de archivos que utiliza Apple de forma nativa desde macOS High Sierra para optimizar SSDs?",
+    "respuestas": ["NTFS", "FAT32", "APFS", "HFS+"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué herramienta de administración de discos en Windows permite ampliar una partición de sistema?",
+    "respuestas": ["Administrador de Tareas", "Administración de equipos > Administración de discos", "Panel de Control > Sistema", "Símbolo del sistema (CMD)"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué herramienta de Windows Server permite gestionar usuarios, grupos y equipos en un dominio?",
+    "respuestas": ["Visor de Eventos", "Usuarios y equipos de Active Directory (ADUC)", "Administrador de dispositivos", "Monitor de rendimiento"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando de Windows se utiliza para verificar la integridad del sistema de archivos y reparar errores?",
+    "respuestas": ["sfc /scannow", "format C:", "chkdsk", "diskpart"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cuál es la extensión de archivo estándar para un script de PowerShell en Windows?",
+    "respuestas": [".exe", ".bat", ".ps1", ".sh"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué combinación de teclas abre directamente el Administrador de Tareas en Windows 10/11?",
+    "respuestas": ["Alt + F4", "Win + L", "Ctrl + Shift + Esc", "Ctrl + Alt + Supr"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cómo se llama el registro jerárquico donde Windows guarda la configuración del sistema y aplicaciones?",
+    "respuestas": ["Archivo Host", "Registro de Windows (Regedit)", "BIOS", "Kernel"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cómo se denomina al proceso de unir varios discos físicos para que aparezcan como un solo volumen lógico más grande?",
+    "respuestas": ["Formateo rápido", "Particionamiento dinámico", "Seccionamiento o Spanning", "Virtualización de hardware"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿En qué directorio de Linux se almacenan los archivos de configuración del sistema de forma global?",
+    "respuestas": ["/bin", "/etc", "/home", "/var"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando se utiliza para listar el contenido de un directorio mostrando permisos y tamaño de archivos?",
+    "respuestas": ["list -all", "dir /s", "ls -la", "show files"],
+    "correcta": 2
+  },
+  {
+    "titulo": "Si aplicamos el comando 'chmod 755 archivo.sh', ¿qué permisos otorgamos al Grupo y a Otros?",
+    "respuestas": ["Lectura y escritura (rw-)", "Solo lectura (r--)", "Lectura y ejecución (r-x)", "Control total (rwx)"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué símbolo se utiliza para redirigir la salida de un comando y añadirla al final de un archivo sin sobrescribirlo?",
+    "respuestas": [">", ">>", "|", "&"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando de Linux permite buscar una cadena de texto específica dentro de un archivo?",
+    "respuestas": ["find", "locate", "grep", "search"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué comando de Linux permite cambiar el propietario de un archivo o directorio?",
+    "respuestas": ["chmod", "chown", "attrib", "userfix"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Para qué sirve el comando 'sudo' en la shell de Linux?",
+    "respuestas": ["Cerrar la sesión actual", "Ejecutar un comando con privilegios de superusuario (root)", "Reiniciar el sistema", "Instalar programas nuevos"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿En qué archivo se encuentra la correspondencia entre sistemas de archivos y puntos de montaje para el arranque?",
+    "respuestas": ["/etc/fstab", "/etc/hosts", "/boot/grub", "/dev/mount"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué comando se utiliza para crear un nuevo directorio en Linux?",
+    "respuestas": ["newdir", "mkdir", "create -d", "md"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué herramienta de código abierto se usa para la clonación y despliegue masivo de SO en entornos universitarios?",
+    "respuestas": ["Clonezilla", "FOG Project", "Docker", "VirtualBox"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En el modelo OSI, ¿en qué capa operan los protocolos IP e ICMP?",
+    "respuestas": ["Capa 2 (Enlace)", "Capa 3 (Red)", "Capa 4 (Transporte)", "Capa 7 (Aplicación)"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es el puerto estándar por defecto que utiliza el protocolo HTTPS?",
+    "respuestas": ["80", "21", "443", "8080"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cuál es el rango de la máscara de subred para una red de clase C por defecto?",
+    "respuestas": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+    "correcta": 2
+  },
+  {
+    "titulo": "En el modelo OSI, ¿cuál es la unidad de datos (PDU) correspondiente a la Capa 2?",
+    "respuestas": ["Segmento", "Paquete", "Trama (Frame)", "Bit"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué tecnología WiFi permite enviar datos a múltiples dispositivos simultáneamente?",
+    "respuestas": ["SISO", "MU-MIMO", "Bluetooth", "WPA3"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En una red con servidor RADIUS, ¿cuál es su función principal?",
+    "respuestas": ["Asignar direcciones IP", "Centralizar la autenticación, autorización y contabilidad (AAA)", "Almacenar archivos compartidos", "Filtrar el tráfico web"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué tipo de conector se utiliza comúnmente para cables de red de par trenzado (Cat 6)?",
+    "respuestas": ["RJ-11", "BNC", "RJ-45", "USB-C"],
+    "correcta": 2
+  },
+  {
+    "titulo": "En una topología de red en estrella, ¿qué sucede si el nodo central (switch) falla?",
+    "respuestas": ["Solo falla un ordenador", "La red sigue funcionando por otro camino", "Toda la red deja de comunicarse", "La velocidad se reduce a la mitad"],
+    "correcta": 2
+  },
+  {
+    "titulo": "En el sistema DNS, ¿qué registro se utiliza para asociar un dominio a una dirección IPv6?",
+    "respuestas": ["Registro A", "Registro MX", "Registro CNAME", "Registro AAAA"],
+    "correcta": 3
+  },
+  {
+    "titulo": "¿Cuál es la dirección IP estándar para referirse al propio equipo (localhost)?",
+    "respuestas": ["192.168.1.1", "127.0.0.1", "10.0.0.1", "0.0.0.0"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la principal ventaja de la banda de 5 GHz frente a la de 2.4 GHz en WiFi?",
+    "respuestas": ["Mayor alcance a través de paredes", "Menor consumo de batería", "Mayores velocidades y menos interferencias", "Compatibilidad con dispositivos antiguos"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Para qué sirve el estándar PoE (Power over Ethernet)?",
+    "respuestas": ["Para aumentar la velocidad del cable", "Suministrar energía eléctrica por el cable de datos", "Cifrar la conexión física", "Conectar fibra óptica a cobre"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es el límite de distancia máximo recomendado para un cable Ethernet de cobre sin repetidores?",
+    "respuestas": ["50 metros", "100 metros", "500 metros", "1 kilómetro"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo asigna automáticamente direcciones IP a los clientes de una red?",
+    "respuestas": ["DNS", "DHCP", "FTP", "SNMP"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significa SSID en el contexto de redes inalámbricas?",
+    "respuestas": ["Sistema de Seguridad de Datos", "Identificador de la red WiFi", "Protocolo de cifrado", "Velocidad de sincronización"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué máscara de subred corresponde a un prefijo de red /27?",
+    "respuestas": ["255.255.255.0", "255.255.255.128", "255.255.255.192", "255.255.255.224"],
+    "correcta": 3
+  },
+  {
+    "titulo": "¿Qué protocolo se utiliza para sincronizar la hora de los dispositivos en una red?",
+    "respuestas": ["HTTP", "NTP", "SMTP", "POP3"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando de red muestra la ruta y los saltos que sigue un paquete hasta un destino?",
+    "respuestas": ["ping", "ipconfig", "tracert / traceroute", "netstat"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué puerto utiliza por defecto el protocolo SSH para administración segura?",
+    "respuestas": ["21", "22", "23", "25"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué topología de red ofrece máxima redundancia al conectar cada nodo con todos los demás?",
+    "respuestas": ["Estrella", "Anillo", "Bus", "Malla (Mesh)"],
+    "correcta": 3
+  },
+  {
+    "titulo": "¿Qué método de autenticación utiliza un objeto físico y algo que el usuario sabe (PIN)?",
+    "respuestas": ["Single Sign-On (SSO)", "Biometría", "MFA (Multi-Factor Authentication)", "Acceso anónimo"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cómo se llama el malware que cifra archivos y exige un pago por el rescate?",
+    "respuestas": ["Spyware", "Ransomware", "Adware", "Rootkit"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es el objetivo principal de una VPN?",
+    "respuestas": ["Aumentar la velocidad de descarga", "Crear un túnel seguro y cifrado sobre una red pública", "Bloquear anuncios en el navegador", "Compartir archivos por Bluetooth"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué dispositivo permite compartir monitor, teclado y ratón entre varios ordenadores?",
+    "respuestas": ["Switch de red", "Splitter HDMI", "Switch KVM", "Docking Station"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué configuración RAID utiliza el 'espejo' (mirroring) para redundancia total?",
+    "respuestas": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es el propósito de un servidor Proxy en una red institucional?",
+    "respuestas": ["Almacenar bases de datos", "Actuar como intermediario para filtrar contenido y mejorar rendimiento", "Gestionar las contraseñas de Windows", "Asignar nombres de dominio"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué registro DNS ayuda a prevenir el phishing verificando servidores autorizados?",
+    "respuestas": ["Registro A", "Registro SPF (Sender Policy Framework)", "Registro PTR", "Registro NS"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En seguridad informática, ¿qué significan las siglas de la tríada CIA?",
+    "respuestas": ["Control, Identidad y Acceso", "Confidencialidad, Integridad y Disponibilidad", "Cifrado, Información y Alerta", "Cómputo, Interconexión y Almacenamiento"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es una DMZ (Zona Desmilitarizada) en una red?",
+    "respuestas": ["Una red sin conexión a Internet", "Una subred aislada para servicios accesibles desde Internet", "El despacho del administrador de sistemas", "Una carpeta con permisos de lectura"],
+    "correcta": 1
+  },
+  {
+    "titulo": "Según la LOPDGDD, ¿cuál es la edad mínima en España para consentir el tratamiento de datos?",
+    "respuestas": ["12 años", "14 años", "16 años", "18 años"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Spear Phishing'?",
+    "respuestas": [
+      "Un ataque masivo enviado a millones de correos", 
+      "Un ataque de phishing dirigido específicamente a una persona o empresa", 
+      "Un virus que se propaga por redes WiFi abiertas", 
+      "Una técnica para descifrar contraseñas por fuerza bruta"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función principal de un servidor de impresión?",
+    "respuestas": [
+      "Escanear documentos y enviarlos por correo", 
+      "Gestionar colas de trabajos y permisos de acceso a impresoras", 
+      "Instalar drivers automáticamente en todos los PCs", 
+      "Reparar errores de hardware de las impresoras"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué software permite crear y gestionar máquinas virtuales?",
+    "respuestas": [
+      "Compilador", 
+      "Hipervisor (ej. VirtualBox, VMware)", 
+      "Kernel", 
+      "BIOS"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo se usa para gestionar y monitorizar dispositivos de red?",
+    "respuestas": [
+      "SMTP", 
+      "SNMP", 
+      "SSH", 
+      "DHCP"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué tipo de RAID reparte los datos (striping) para velocidad pero no tiene redundancia?",
+    "respuestas": [
+      "RAID 0", 
+      "RAID 1", 
+      "RAID 5", 
+      "RAID 6"
+    ],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué es el 'Pharming'?",
+    "respuestas": [
+      "Robar contraseñas mirando por encima del hombro", 
+      "Redirigir a usuarios a webs falsas manipulando el sistema DNS", 
+      "Enviar publicidad no deseada por SMS", 
+      "Infectar un ordenador a través de un USB"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función de un sistema UPS (SAI)?",
+    "respuestas": [
+      "Aumentar la velocidad de Internet", 
+      "Proporcionar energía temporal y proteger contra picos eléctricos", 
+      "Realizar copias de seguridad en la nube", 
+      "Gestionar las actualizaciones de Windows"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo se usa para acceder a servicios de directorio (como Active Directory)?",
+    "respuestas": [
+      "HTTP", 
+      "LDAP", 
+      "FTP", 
+      "ICMP"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Exploit'?",
+    "respuestas": [
+      "Un programa para limpiar el registro de Windows", 
+      "Software que aprovecha una vulnerabilidad para causar un comportamiento no deseado", 
+      "Un tipo de cable de red de alta velocidad", 
+      "Una técnica de compresión de archivos"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Thin Client'?",
+    "respuestas": [
+      "Un ordenador potente para diseño gráfico", 
+      "Un equipo ligero que depende de un servidor para el procesamiento", 
+      "Un cable de red muy fino", 
+      "Un smartphone de última generación"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cómo se llama la red WiFi de roaming internacional para universidades?",
+    "respuestas": [
+      "UniWiFi", 
+      "Eduroam", 
+      "FreeCampus", 
+      "GlobalNet"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significa que una copia de seguridad sea 'Incremental'?",
+    "respuestas": [
+      "Que borra los datos antiguos para dejar sitio", 
+      "Que solo copia los datos modificados desde la última copia realizada", 
+      "Que copia todo el disco duro cada vez", 
+      "Que solo se hace una vez al año"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo de Microsoft permite controlar gráficamente un equipo a distancia?",
+    "respuestas": [
+      "Telnet", 
+      "HTTP", 
+      "RDP (Escritorio Remoto)", 
+      "VNC"
+    ],
+    "correcta": 2
+  },
+  {
+    "titulo": "En Linux, ¿qué comando muestra los procesos en ejecución en tiempo real?",
+    "respuestas": [
+      "ps -ef", 
+      "list-proc", 
+      "top (o htop)", 
+      "tasklist"
+    ],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Para qué sirve el protocolo ICMP?",
+    "respuestas": [
+      "Para transferir archivos grandes", 
+      "Para enviar mensajes de error y diagnóstico (ej. Ping)", 
+      "Para enviar correos electrónicos", 
+      "Para cifrar páginas web"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Mirroring' en el contexto de almacenamiento?",
+    "respuestas": [
+      "Hacer una foto de la pantalla", 
+      "La duplicación de datos en tiempo real en dos discos distintos", 
+      "Proyectar la imagen del PC en una televisión", 
+      "Borrar archivos duplicados"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué puerto usa por defecto el protocolo DNS?",
+    "respuestas": [
+      "21", 
+      "53", 
+      "80", 
+      "110"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando de Windows muestra la configuración detallada de red (IP, MAC)?",
+    "respuestas": [
+      "ping localhost", 
+      "netstat -a", 
+      "ipconfig /all", 
+      "show network"
+    ],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cuál es la unidad básica de información en computación cuántica?",
+    "respuestas": [
+      "Bit", 
+      "Byte", 
+      "Qubit", 
+      "Pixel"
+    ],
+    "correcta": 2
+  },
+  {
+    "titulo": "En la UA, ¿cuál es el objetivo primordial del soporte técnico de nivel 1?",
+    "respuestas": [
+      "Reparar servidores de bases de datos", 
+      "Resolución de incidencias básicas y filtrado hacia niveles superiores", 
+      "Programar aplicaciones personalizadas", 
+      "Diseñar la infraestructura de red"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué puerto utiliza el protocolo LDAP para conexiones no cifradas?",
+    "respuestas": ["25", "389", "443", "636"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué tecnología permite asignar una dirección IP diferente según la ubicación física del usuario para optimizar la descarga?",
+    "respuestas": ["VPN", "Proxy Inverso", "CDN (Content Delivery Network)", "DHCP"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué herramienta se usa para analizar el tráfico de red y capturar paquetes (Sniffer)?",
+    "respuestas": ["Wireshark / tcpdump", "Windows Defender", "FileZilla", "Notepad++"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué protocolo permite la resolución de nombres en redes locales de Microsoft sin servidor DNS?",
+    "respuestas": ["HTTP", "NetBIOS / LLMNR", "SNMP", "SMTP"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Shadow IT'?",
+    "respuestas": ["El uso de software sin aprobación del departamento de TI", "Un virus que oculta archivos", "Un modo oscuro para programadores", "Una red WiFi oculta"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué puerto utiliza el protocolo POP3 para recibir correos sin cifrar?",
+    "respuestas": ["80", "110", "143", "995"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cómo se llama el proceso de convertir un texto plano en un código ilegible mediante una clave?",
+    "respuestas": ["Compresión", "Cifrado o Encriptación", "Desfragmentación", "Formateo"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué función tiene un servidor de archivos (File Server)?",
+    "respuestas": ["Alojar páginas web", "Enviar correos masivos", "Almacenar y compartir acceso a archivos de forma centralizada", "Controlar las cámaras de seguridad"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué es el 'Bring Your Own Device' (BYOD)?",
+    "respuestas": ["Comprar dispositivos nuevos para la empresa", "Política de usar dispositivos personales para trabajar", "Un cargador universal", "Un tipo de conector de red"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En el contexto de la UA, ¿cuál es el protocolo para configurar el acceso a la red inalámbrica de forma segura?",
+    "respuestas": ["WEP", "WPA2/WPA3-Enterprise (802.1X)", "Abierta con captivo", "WPS"],
+    "correcta": 1
+  }
+]

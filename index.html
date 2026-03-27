@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Simulador de Tests</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .quiz-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); width: 90%; max-width: 450px; }
+        .grid-respuestas { display: grid; gap: 10px; margin-top: 20px; }
+        button.opcion { padding: 15px; border: 2px solid #edf2f7; border-radius: 12px; background: #fff; cursor: pointer; text-align: left; width: 100%; font-size: 1rem; }
+        .correcta { background-color: #c6f6d5 !important; border-color: #38a169 !important; }
+        .incorrecta { background-color: #fed7d7 !important; border-color: #e53e3e !important; }
+        #siguiente { display: none; width: 100%; margin-top: 20px; padding: 12px; background: #3182ce; color: white; border: none; border-radius: 8px; cursor: pointer; }
+        .resumen { text-align: center; display: none; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-card">
+    <div id="juego">
+        <h2 id="pregunta-texto">Cargando preguntas externas... 🧠</h2>
+        <div id="contenedor-opciones" class="grid-respuestas"></div>
+        <div id="feedback" style="margin-top:20px; text-align:center; font-weight:bold;"></div>
+        <button id="siguiente">Siguiente pregunta ➔</button>
+    </div>
+    
+    <div id="pantalla-resultados" class="resumen">
+        <h2>¡Test Completado! 🏁</h2>
+        <p>Aciertos: <span id="total-aciertos">0</span></p>
+        <p>Fallos: <span id="total-fallos">0</span></p>
+        <button onclick="reiniciarTest()" style="width:100%; padding:15px; background:#3182ce; color:white; border-radius:12px; border:none; cursor:pointer;">Repetir Test 🔄</button>
+    </div>
+</div>
+
+<script>
+    let preguntas = [];
+    let indiceActual = 0;
+    let aciertos = 0;
+    let fallos = 0;
+
+    // Conexión real con el archivo externo
+    async function cargarDatos() {
+        try {
+            const respuesta = await fetch('preguntas.json'); 
+            if (!respuesta.ok) throw new Error("No se encuentra el archivo preguntas.json");
+            preguntas = await respuesta.json();
+            mostrarPregunta();
+        } catch (error) {
+            document.getElementById("pregunta-texto").innerText = "Error: " + error.message;
+        }
+    }
+
+    function mostrarPregunta() {
+        const p = preguntas[indiceActual];
+        document.getElementById("pregunta-texto").innerText = p.titulo;
+        const contenedor = document.getElementById("contenedor-opciones");
+        contenedor.innerHTML = "";
+        document.getElementById("feedback").innerText = "";
+        document.getElementById("siguiente").style.display = "none";
+
+        p.respuestas.forEach((texto, i) => {
+            const btn = document.createElement("button");
+            btn.classList.add("opcion");
+            btn.innerText = texto;
+            btn.onclick = () => validar(i, p.correcta, btn);
+            contenedor.appendChild(btn);
+        });
+    }
+
+    function validar(elegida, correcta, boton) {
+        const botones = document.querySelectorAll(".opcion");
+        botones.forEach(b => b.disabled = true);
+        if (elegida === correcta) {
+            boton.classList.add("correcta");
+            aciertos++;
+        } else {
+            boton.classList.add("incorrecta");
+            botones[correcta].classList.add("correcta");
+            fallos++;
+        }
+        document.getElementById("siguiente").style.display = "block";
+    }
+
+    document.getElementById("siguiente").onclick = () => {
+        indiceActual++;
+        if (indiceActual < preguntas.length) {
+            mostrarPregunta();
+        } else {
+            document.getElementById("juego").style.display = "none";
+            document.getElementById("pantalla-resultados").style.display = "block";
+            document.getElementById("total-aciertos").innerText = aciertos;
+            document.getElementById("total-fallos").innerText = fallos;
+        }
+    };
+
+    function reiniciarTest() {
+        indiceActual = 0;
+        aciertos = 0;
+        fallos = 0;
+        document.getElementById("pantalla-resultados").style.display = "none";
+        document.getElementById("juego").style.display = "block";
+        mostrarPregunta();
+    }
+
+    cargarDatos();
+</script>
+</body>
+</html>
