@@ -708,5 +708,95 @@
     "titulo": "En la UA, ¿qué sistema se utiliza para la firma electrónica de documentos oficiales?",
     "respuestas": ["WhatsApp", "Portafirmas", "Paint", "Spotify"],
     "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significan las siglas SLA en un contrato de servicios tecnológicos?",
+    "respuestas": [
+      "System Level Access",
+      "Service Level Agreement (Acuerdo de Nivel de Servicio)",
+      "Software Logic Analysis",
+      "Secure Login Authentication"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la principal diferencia entre una copia de seguridad Diferencial e Incremental?",
+    "respuestas": [
+      "La diferencial es más rápida de realizar",
+      "La diferencial copia todo lo cambiado desde la última copia completa; la incremental solo desde la última copia de cualquier tipo",
+      "La incremental ocupa mucho más espacio en disco",
+      "No hay diferencia, son términos sinónimos"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Escalado de una incidencia' en un servicio de soporte?",
+    "respuestas": [
+      "Cerrar la incidencia porque ya está resuelta",
+      "Transferir el problema a un técnico con mayor especialización o nivel de responsabilidad",
+      "Hacer una copia de seguridad del equipo afectado",
+      "Cobrar una tarifa extra por el servicio"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo se utiliza para configurar la recepción de correo electrónico manteniendo los mensajes en el servidor?",
+    "respuestas": ["POP3", "IMAP", "SMTP", "SNMP"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'SAAS' (Software as a Service)?",
+    "respuestas": [
+      "Un programa que instalas mediante un CD",
+      "Software alojado en la nube al que se accede por suscripción a través de Internet",
+      "Un sistema operativo para servidores",
+      "Una pieza de hardware para acelerar gráficos"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "En el contexto de la seguridad, ¿qué es un ataque de 'Denegación de Servicio' (DoS)?",
+    "respuestas": [
+      "Robar la contraseña del administrador",
+      "Saturar un recurso para que los usuarios legítimos no puedan acceder a él",
+      "Borrar la base de datos de la empresa",
+      "Instalar un programa espía en el servidor"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué herramienta permite el control remoto de equipos multiplataforma a través de ID y contraseña?",
+    "respuestas": ["Microsoft Word", "TeamViewer / AnyDesk", "VLC", "WinRAR"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Hotfix'?",
+    "respuestas": [
+      "Un virus que calienta el procesador",
+      "Un parche de software diseñado para solucionar un error específico y urgente",
+      "Un ventilador de alta velocidad",
+      "Un tipo de cable de red"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función de un sistema de inventario (CMDB)?",
+    "respuestas": [
+      "Guardar las fotos de los empleados",
+      "Mantener un registro de todos los activos de IT y sus relaciones",
+      "Acelerar la conexión a Internet",
+      "Programar las vacaciones del personal"
+    ],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significa que un sistema tenga 'Alta Disponibilidad'?",
+    "respuestas": [
+      "Que es muy barato de comprar",
+      "Que está diseñado para estar operativo el máximo tiempo posible (mínimas caídas)",
+      "Que tiene muchos puertos USB",
+      "Que solo funciona durante el horario laboral"
+    ],
+    "correcta": 1
   }
 ]
