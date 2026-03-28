@@ -19,7 +19,8 @@
 
 <div class="quiz-card">
     <div id="juego">
-        <h2 id="pregunta-texto">Cargando preguntas externas... 🧠</h2>
+<p id="contador-progreso" style="color: #666; font-weight: bold; margin-bottom: 5px;">Pregunta 0 de 0</p>
+<h2 id="pregunta-texto">Cargando preguntas externas... 🧠</h2>
         <div id="contenedor-opciones" class="grid-respuestas"></div>
         <div id="feedback" style="margin-top:20px; text-align:center; font-weight:bold;"></div>
         <button id="siguiente">Siguiente pregunta ➔</button>
@@ -51,10 +52,33 @@
         }
     }
 
-    function mostrarPregunta() {
+   /*old function mostrarPregunta() {
         const p = preguntas[indiceActual];
         document.getElementById("pregunta-texto").innerText = p.titulo;
-        const contenedor = document.getElementById("contenedor-opciones");
+        const contenedor = document.getElementById("contenedor-opciones");*/
+function mostrarPregunta() {
+    const p = preguntas[indiceActual];
+    
+    // Actualizamos el contador de progreso
+    const total = preguntas.length;
+    const actual = indiceActual + 1;
+    document.getElementById("contador-progreso").innerText = `Pregunta ${actual} de ${total}`;
+    
+    // El resto del código se mantiene igual
+    document.getElementById("pregunta-texto").innerText = p.titulo;
+    const contenedor = document.getElementById("contenedor-opciones");
+    contenedor.innerHTML = "";
+    document.getElementById("feedback").innerText = "";
+    document.getElementById("siguiente").style.display = "none";
+
+    p.respuestas.forEach((texto, i) => {
+        const btn = document.createElement("button");
+        btn.classList.add("opcion");
+        btn.innerText = texto;
+        btn.onclick = () => validar(i, p.correcta, btn);
+        contenedor.appendChild(btn);
+    });
+}
         contenedor.innerHTML = "";
         document.getElementById("feedback").innerText = "";
         document.getElementById("siguiente").style.display = "none";
