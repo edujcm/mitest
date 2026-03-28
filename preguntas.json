@@ -1,5 +1,205 @@
 [
   {
+    "titulo": "¿Qué tecnología de panel de monitor ofrece mejores ángulos de visión y colores más precisos?",
+    "respuestas": ["TN (Twisted Nematic)", "IPS (In-Plane Switching)", "LED básico", "CRT"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Rootkit'?",
+    "respuestas": ["Un programa para optimizar el inicio", "Software malicioso diseñado para ocultar su presencia y la de otros malwares", "Un kit de herramientas para limpiar teclados", "El cable principal de un servidor"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué comando de Linux muestra el uso de espacio en disco de forma legible?",
+    "respuestas": ["df -h", "disk -show", "ls -size", "format /s"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué es la 'Virtualización de Escritorio' (VDI)?",
+    "respuestas": ["Limpiar el escritorio de iconos", "Ejecutar sistemas operativos de escritorio en servidores centralizados", "Usar dos monitores a la vez", "Poner un fondo de pantalla en 3D"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En Windows, ¿qué herramienta permite programar tareas para que se ejecuten automáticamente?",
+    "respuestas": ["Panel de Control", "Programador de Tareas", "Bloc de Notas", "Calculadora"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significan las siglas LAN?",
+    "respuestas": ["Large Area Network", "Local Area Network", "Link Access Node", "Lightweight App Network"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función de un repetidor WiFi?",
+    "respuestas": ["Cambiar la contraseña de la red", "Recibir una señal inalámbrica y retransmitirla para ampliar el alcance", "Acelerar la conexión de fibra", "Conectar el PC por cable"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Phishing'?",
+    "respuestas": ["Un tipo de deporte electrónico", "Técnica de ingeniería social para robar información sensible fingiendo ser una entidad fiable", "Actualizar el software del router", "Limpiar el historial del navegador"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué puerto estándar utiliza el protocolo SMTP para envío de correo sin cifrar?",
+    "respuestas": ["21", "25", "110", "443"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Zero-Day' (Día Cero)?",
+    "respuestas": ["El primer día del año en informática", "Una vulnerabilidad recién descubierta para la que aún no hay parche", "Un fallo que borra todos los datos", "El reinicio del servidor"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué componente de hardware se encarga de procesar los gráficos y liberar carga a la CPU?",
+    "respuestas": ["Memoria RAM", "Tarjeta de Sonido", "GPU (Tarjeta Gráfica)", "Disco duro"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué es el 'Dual-Channel' en la memoria RAM?",
+    "respuestas": ["Tener dos sistemas operativos", "Tecnología que duplica la velocidad de transferencia de datos entre la RAM y el controlador", "Poder usar dos ratones", "Escuchar música por dos altavoces"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo se usa para la comunicación de voz a través de Internet?",
+    "respuestas": ["HTTP", "VoIP", "FTP", "SMTP"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Software de Sistema'?",
+    "respuestas": ["Los programas como Word o Excel", "Programas que gestionan los recursos del hardware y sirven de plataforma (ej. SO)", "Virus de sistema", "Juegos de ordenador"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En una impresora láser, ¿cuál es la función del fusor?",
+    "respuestas": ["Limpiar el papel", "Aplicar calor y presión para fijar el tóner al papel", "Inyectar la tinta líquida", "Girar el rodillo de salida"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es la 'Arquitectura de 64 bits'?",
+    "respuestas": ["Tener 64 programas instalados", "Capacidad del procesador para manejar datos en bloques de 64 bits y direccionar más RAM", "Un monitor de 64 pulgadas", "Una conexión de red de 64 Mbps"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Cookie' en navegación web?",
+    "respuestas": ["Un virus que ralentiza el PC", "Pequeño archivo de datos enviado por un sitio web y almacenado en el navegador del usuario", "Una imagen publicitaria", "Un programa para hackear contraseñas"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el protocolo 'Plug and Play' (PnP)?",
+    "respuestas": ["Un juego de ordenador", "Tecnología que permite al sistema reconocer y configurar periféricos automáticamente al conectarlos", "Un tipo de cable USB", "Actualizar el sistema"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la principal característica de un disco duro mecánico (HDD)?",
+    "respuestas": ["No tiene partes móviles", "Usa platos magnéticos que giran para leer/escribir datos", "Es más rápido que un SSD", "Se conecta solo por WiFi"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significan las siglas 'URL'?",
+    "respuestas": ["Universal Resource Locator", "Uniform Resource Locator", "User Remote Link", "United Radio Line"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es una 'Intranet'?",
+    "respuestas": ["La red global de Internet", "Una red privada interna de una organización basada en estándares de Internet", "Un cable de fibra óptica", "Una página web de noticias"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Zipping' (Comprimir)?",
+    "respuestas": ["Borrar archivos innecesarios", "Reducir el tamaño de uno o más archivos para ahorrar espacio o facilitar su envío", "Cambiar el nombre de una carpeta", "Poner una contraseña al PC"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función del ventilador del procesador?",
+    "respuestas": ["Expulsar el polvo", "Disipar el calor generado por la CPU para evitar daños", "Hacer que el PC sea más silencioso", "Aumentar la velocidad de Internet"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Punto de Restauración' en Windows?",
+    "respuestas": ["Formatear el equipo", "Copia del estado del sistema en un momento dado para volver a él en caso de errores", "Un lugar donde arreglan PCs", "El botón de encendido"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significan las siglas P2P?",
+    "respuestas": ["Point to Point", "Peer to Peer (Red entre iguales)", "Password to Password", "Professional to Personal"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En el contexto de la UA, ¿qué es la 'Sede Electrónica'?",
+    "respuestas": ["El edificio del rectorado", "Punto de acceso online para realizar trámites administrativos con validez legal", "La red WiFi de la biblioteca", "Un aula de informática"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Screencast'?",
+    "respuestas": ["Una foto de la pantalla", "Grabación digital de la salida de la pantalla del ordenador, a menudo con audio", "Un tipo de monitor inalámbrico", "Un proyector de alta definición"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Malware'?",
+    "respuestas": ["Cualquier software diseñado para causar daño a un ordenador, servidor o red", "Un programa que no funciona", "Hardware de mala calidad", "Un tipo de publicidad"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué significan las siglas PDF?",
+    "respuestas": ["Print Data File", "Portable Document Format", "Personal Digital File", "Primary Document Folder"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Multitasking' (Multitarea)?",
+    "respuestas": ["Tener muchos monitores", "Capacidad del SO para ejecutar varios procesos simultáneamente", "Un procesador muy grande", "Instalar muchos programas a la vez"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué componente alimenta eléctricamente a todos los demás en un PC?",
+    "respuestas": ["Placa base", "Fuente de alimentación (PSU)", "Batería de la BIOS", "Enchufe de pared"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Bug'?",
+    "respuestas": ["Un virus informático", "Un error o fallo en un programa de software", "Un tipo de cable", "Un componente quemado"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué función cumple el comando 'ping'?",
+    "respuestas": ["Aumentar la velocidad", "Comprobar la conectividad entre dos nodos de una red", "Descargar un archivo", "Cerrar la sesión"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es la 'Cibercrimen'?",
+    "respuestas": ["Un videojuego de acción", "Actividad delictiva realizada mediante el uso de ordenadores o Internet", "Un error del sistema", "Un tipo de seguridad"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Dongle'?",
+    "respuestas": ["Un cable de red largo", "Pequeño dispositivo que se conecta a otro para añadir funciones (ej. adaptador WiFi USB)", "Una antena de televisión", "Un tipo de disco duro"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Lag'?",
+    "respuestas": ["Un tipo de archivo comprimido", "Retraso excesivo en una comunicación de red", "La batería baja", "Una pantalla rota"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Firmado Digital'?",
+    "respuestas": ["Escribir tu nombre con el ratón", "Mecanismo criptográfico que asegura la autenticidad e integridad de un documento", "Escanear una firma en papel", "Un protector de pantalla"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Webinar'?",
+    "respuestas": ["Una araña que vive en servidores", "Seminario o charla impartida a través de Internet", "Una página web de noticias", "Un buscador"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Streaming'?",
+    "respuestas": ["Descargar un vídeo para verlo después", "Distribución de datos multimedia que se consumen en tiempo real mientras se descargan", "Limpiar el monitor", "Enviar correos masivos"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es la 'Informática en la nube' (Cloud Computing)?",
+    "respuestas": ["Usar el ordenador cuando llueve", "Suministro de servicios de computación a través de Internet", "Una red de satélites", "Un tipo de procesador"],
+    "correcta": 1
+  },
+  {
     "titulo": "¿Qué tipo de memoria RAM mantiene los datos aunque se corte la corriente eléctrica?",
     "respuestas": ["DRAM", "SRAM", "NVRAM", "SDRAM"],
     "correcta": 2
