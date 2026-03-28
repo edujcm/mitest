@@ -1,5 +1,105 @@
 [
   {
+    "titulo": "¿Qué tipo de memoria RAM mantiene los datos aunque se corte la corriente eléctrica?",
+    "respuestas": ["DRAM", "SRAM", "NVRAM", "SDRAM"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué significan las siglas BIOS?",
+    "respuestas": ["Binary Input Output System", "Basic Input Output System", "Bus Internal Operating System", "Built-in Integrated OS"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué tecnología permite conectar dispositivos periféricos de alta velocidad en cadena (daisy-chain)?",
+    "respuestas": ["USB 2.0", "Thunderbolt", "VGA", "SATA"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función del 'Northbridge' en una placa base antigua?",
+    "respuestas": ["Gestionar los puertos USB", "Comunicar la CPU con la memoria RAM y la GPU", "Controlar el teclado y el ratón", "Administrar la entrada de corriente"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el Overclocking?",
+    "respuestas": ["Poner el reloj del PC en hora", "Aumentar la velocidad de ciclo de un componente por encima de la de fábrica", "Limpiar el ventilador de la CPU", "Instalar dos sistemas operativos"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué protocolo se utiliza para la transferencia de archivos en una red local de forma sencilla?",
+    "respuestas": ["SMB / CIFS", "HTTP", "ICMP", "SSH"],
+    "correcta": 0
+  },
+  {
+    "titulo": "En Windows, ¿qué combinación de teclas permite proyectar la pantalla a un monitor externo?",
+    "respuestas": ["Win + P", "Win + D", "Alt + Tab", "Ctrl + P"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué es un 'Driver' o Controlador?",
+    "respuestas": ["Un usuario con permisos totales", "Software que permite al SO interactuar con el hardware", "Un cable de conexión", "Un antivirus"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué tipo de conector se usa para discos duros internos actualmente?",
+    "respuestas": ["IDE", "SCSI", "SATA", "Molex"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Cuál es la función de la Memoria Caché de un procesador?",
+    "respuestas": ["Almacenar archivos descargados de Internet", "Proporcionar acceso ultra rápido a datos frecuentemente usados por la CPU", "Guardar las contraseñas", "Hacer que el monitor brille más"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Ancho de Banda'?",
+    "respuestas": ["La longitud de un cable de red", "La cantidad máxima de datos que pueden transmitirse por una conexión en un tiempo dado", "El número de ordenadores conectados", "La potencia de la antena WiFi"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué herramienta de Windows permite ver el uso de CPU y RAM en tiempo real?",
+    "respuestas": ["Panel de Control", "Administrador de Tareas", "Bloc de Notas", "Explorador de Archivos"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significan las siglas SSD?",
+    "respuestas": ["Super Speed Disk", "Solid State Drive", "System Storage Device", "Secure Software Design"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En una red WiFi, ¿qué es el canal?",
+    "respuestas": ["El nombre de la red", "La frecuencia específica en la que se transmiten los datos", "La contraseña", "El tipo de router"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es la Latencia?",
+    "respuestas": ["La velocidad de descarga de archivos", "El tiempo de retraso en la transmisión de un paquete de datos", "La duración de la batería", "El peso de un portátil"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Software Libre'?",
+    "respuestas": ["Software que no cuesta dinero", "Software que respeta la libertad de los usuarios para ejecutar, copiar, estudiar y mejorar el código", "Software que no tiene copyright", "Software que se descarga de forma pirata"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un píxel?",
+    "respuestas": ["Un tipo de cable de vídeo", "La unidad menor de color que forma una imagen digital", "Un sensor de la cámara", "Un error en la pantalla"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué puerto utiliza el protocolo FTP para el control de datos?",
+    "respuestas": ["21", "22", "23", "80"],
+    "correcta": 0
+  },
+  {
+    "titulo": "¿Qué es el 'Cloud Storage'?",
+    "respuestas": ["Un disco duro externo", "Almacenamiento de datos en servidores remotos accesibles vía Internet", "Un sistema de refrigeración por aire", "Una forma de imprimir fotos"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En la UA, ¿cuál es el método preferido para enviar archivos muy pesados a externos?",
+    "respuestas": ["WhatsApp", "Correo electrónico (adjunto)", "Consigna (FileSender / Cloud UA)", "Memoria USB por correo postal"],
+    "correcta": 2
+  },
+  {
   "titulo": "¿Qué componente de la CPU se encarga de coordinar el flujo de datos y las instrucciones entre los distintos componentes del procesador?",
   "respuestas": ["Unidad Aritmético Lógica", "Memoria Caché", "Unidad de Control (UC)", "Registro de Instrucción"],
   "correcta": 2
