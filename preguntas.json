@@ -798,5 +798,56 @@
       "Que solo funciona durante el horario laboral"
     ],
     "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Pharming'?",
+    "respuestas": ["Robar contraseñas mirando el teclado", "Redirigir a usuarios a webs falsas manipulando el DNS", "Enviar publicidad por SMS", "Infectar un USB"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En la LOPDGDD, ¿qué es el principio de 'Minimización de datos'?",
+    "respuestas": ["Borrar los datos cada mes", "Recopilar solo los datos estrictamente necesarios para la finalidad", "Hacer los archivos más pequeños", "Usar fuentes de letra pequeñas"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué puerto utiliza el protocolo HTTPS?",
+    "respuestas": ["80", "21", "443", "8080"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué es un 'Keylogger'?",
+    "respuestas": ["Un programa que genera contraseñas", "Malware que registra las pulsaciones del teclado", "Un tipo de memoria USB", "Un gestor de licencias"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Cuál es la función del protocolo DHCP?",
+    "respuestas": ["Traducir nombres de dominio", "Asignar direcciones IP de forma automática", "Cifrar el correo", "Medir la velocidad de red"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué significa 'Open Source'?",
+    "respuestas": ["Que es gratis para siempre", "Que su código fuente es accesible y puede ser modificado por cualquiera", "Que solo funciona en Windows", "Que no tiene garantía"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es el 'Escritorio Remoto' (RDP)?",
+    "respuestas": ["Un monitor muy grande", "Protocolo para controlar un PC a distancia de forma gráfica", "Una mesa de oficina moderna", "Un sistema de videoconferencia"],
+    "correcta": 1
+  },
+  {
+    "titulo": "¿Qué es un 'Firewall' (Cortafuegos)?",
+    "respuestas": ["Un sistema de refrigeración", "Un sistema que filtra el tráfico de red entrante y saliente", "Un antivirus para móviles", "Un cable con protección térmica"],
+    "correcta": 1
+  },
+  {
+    "titulo": "En SQL, ¿qué comando se usa para insertar nuevos datos?",
+    "respuestas": ["ADD", "CREATE", "INSERT INTO", "PUT"],
+    "correcta": 2
+  },
+  {
+    "titulo": "¿Qué es el 'Firmware'?",
+    "respuestas": ["Un software de oficina", "Software básico que controla directamente el hardware", "Una firma digital", "Un disco duro externo"],
+    "correcta": 1
   }
 ]
+
