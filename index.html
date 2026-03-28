@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Simulador de Tests</title>
+    <title>Simulador de Examen UA</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .quiz-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); width: 90%; max-width: 450px; }
-        .grid-respuestas { display: grid; gap: 10px; margin-top: 20px; }
-        button.opcion { padding: 15px; border: 2px solid #edf2f7; border-radius: 12px; background: #fff; cursor: pointer; text-align: left; width: 100%; font-size: 1rem; }
-        .correcta { background-color: #c6f6d5 !important; border-color: #38a169 !important; }
-        .incorrecta { background-color: #fed7d7 !important; border-color: #e53e3e !important; }
-        #siguiente { display: none; width: 100%; margin-top: 20px; padding: 12px; background: #3182ce; color: white; border: none; border-radius: 8px; cursor: pointer; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .quiz-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 90%; max-width: 500px; }
+        
+        /* Estilos de la Barra de Progreso */
+        .progress-container { width: 100%; background-color: #edf2f7; border-radius: 10px; height: 10px; margin-bottom: 20px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: #3182ce; width: 0%; transition: width 0.3s ease; }
+        
+        #contador-progreso { color: #4a5568; font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; display: block; }
+        
+        .grid-respuestas { display: grid; gap: 12px; margin-top: 20px; }
+        button.opcion { padding: 15px; border: 2px solid #e2e8f0; border-radius: 12px; background: #fff; cursor: pointer; text-align: left; width: 100%; font-size: 1rem; transition: all 0.2s; }
+        button.opcion:hover:not(:disabled) { border-color: #3182ce; background-color: #ebf8ff; }
+        
+        .correcta { background-color: #c6f6d5 !important; border-color: #38a169 !important; color: #22543d; font-weight: bold; }
+        .incorrecta { background-color: #fed7d7 !important; border-color: #e53e3e !important; color: #742a2a; }
+        
+        #siguiente { display: none; width: 100%; margin-top: 25px; padding: 15px; background: #3182ce; color: white; border: none; border-radius: 12px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+        #siguiente:hover { background: #2b6cb0; }
+        
         .resumen { text-align: center; display: none; }
+        #feedback { margin-top: 20px; text-align: center; font-weight: bold; min-height: 24px; }
     </style>
 </head>
 <body>
 
 <div class="quiz-card">
     <div id="juego">
-<p id="contador-progreso" style="color: #666; font-weight: bold; margin-bottom: 5px;">Pregunta 0 de 0</p>
-<h2 id="pregunta-texto">Cargando preguntas externas... 🧠</h2>
+        <span id="contador-progreso">Cargando...</span>
+        <div class="progress-container">
+            <div id="barra-relleno" class="progress-bar"></div>
+        </div>
+
+        <h2 id="pregunta-texto">Cargando preguntas... 🧠</h2>
         <div id="contenedor-opciones" class="grid-respuestas"></div>
-        <div id="feedback" style="margin-top:20px; text-align:center; font-weight:bold;"></div>
+        <div id="feedback"></div>
         <button id="siguiente">Siguiente pregunta ➔</button>
     </div>
     
     <div id="pantalla-resultados" class="resumen">
         <h2>¡Test Completado! 🏁</h2>
-        <p>Aciertos: <span id="total-aciertos">0</span></p>
-        <p>Fallos: <span id="total-fallos">0</span></p>
-        <button onclick="reiniciarTest()" style="width:100%; padding:15px; background:#3182ce; color:white; border-radius:12px; border:none; cursor:pointer;">Repetir Test 🔄</button>
+        <p style="font-size: 1.2rem;">Aciertos: <span id="total-aciertos" style="color: #38a169; font-weight: bold;">0</span></p>
+        <p style="font-size: 1.2rem;">Fallos: <span id="total-fallos" style="color: #e53e3e; font-weight: bold;">0</span></p>
+        <button onclick="reiniciarTest()" style="width:100%; padding:15px; background:#3182ce; color:white; border-radius:12px; border:none; cursor:pointer; font-weight:bold; margin-top:20px;">Repetir Test 🔄</button>
     </div>
 </div>
 
@@ -40,11 +57,10 @@
     let aciertos = 0;
     let fallos = 0;
 
-    // Conexión real con el archivo externo
     async function cargarDatos() {
         try {
             const respuesta = await fetch('preguntas.json'); 
-            if (!respuesta.ok) throw new Error("No se encuentra el archivo preguntas.json");
+            if (!respuesta.ok) throw new Error("No se pudo cargar el JSON");
             preguntas = await respuesta.json();
             mostrarPregunta();
         } catch (error) {
@@ -52,33 +68,20 @@
         }
     }
 
-   /*old function mostrarPregunta() {
+    function mostrarPregunta() {
         const p = preguntas[indiceActual];
-        document.getElementById("pregunta-texto").innerText = p.titulo;
-        const contenedor = document.getElementById("contenedor-opciones");*/
-function mostrarPregunta() {
-    const p = preguntas[indiceActual];
-    
-    // Actualizamos el contador de progreso
-    const total = preguntas.length;
-    const actual = indiceActual + 1;
-    document.getElementById("contador-progreso").innerText = `Pregunta ${actual} de ${total}`;
-    
-    // El resto del código se mantiene igual
-    document.getElementById("pregunta-texto").innerText = p.titulo;
-    const contenedor = document.getElementById("contenedor-opciones");
-    contenedor.innerHTML = "";
-    document.getElementById("feedback").innerText = "";
-    document.getElementById("siguiente").style.display = "none";
+        const total = preguntas.length;
+        const actual = indiceActual + 1;
 
-    p.respuestas.forEach((texto, i) => {
-        const btn = document.createElement("button");
-        btn.classList.add("opcion");
-        btn.innerText = texto;
-        btn.onclick = () => validar(i, p.correcta, btn);
-        contenedor.appendChild(btn);
-    });
-}
+        // Actualizar Contador Texto
+        document.getElementById("contador-progreso").innerText = `Pregunta ${actual} de ${total}`;
+        
+        // Actualizar Barra de Progreso Visual
+        const porcentaje = (actual / total) * 100;
+        document.getElementById("barra-relleno").style.width = porcentaje + "%";
+
+        document.getElementById("pregunta-texto").innerText = p.titulo;
+        const contenedor = document.getElementById("contenedor-opciones");
         contenedor.innerHTML = "";
         document.getElementById("feedback").innerText = "";
         document.getElementById("siguiente").style.display = "none";
@@ -95,12 +98,17 @@ function mostrarPregunta() {
     function validar(elegida, correcta, boton) {
         const botones = document.querySelectorAll(".opcion");
         botones.forEach(b => b.disabled = true);
+        
         if (elegida === correcta) {
             boton.classList.add("correcta");
+            document.getElementById("feedback").innerText = "¡Correcto! ✨";
+            document.getElementById("feedback").style.color = "#38a169";
             aciertos++;
         } else {
             boton.classList.add("incorrecta");
             botones[correcta].classList.add("correcta");
+            document.getElementById("feedback").innerText = "Respuesta incorrecta ❌";
+            document.getElementById("feedback").style.color = "#e53e3e";
             fallos++;
         }
         document.getElementById("siguiente").style.display = "block";
